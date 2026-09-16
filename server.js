@@ -14,7 +14,7 @@ app.post("/login", (req, res) => {
 
     console.log("Tentativa de login recebida.");
     console.log("Usuário:", usuario);
-    console.log("Senha recebida:", senha);
+    
 
     // Dados fictícios para teste
     if (usuario === "teste" && senha === "123456") {
@@ -31,6 +31,8 @@ app.post("/login", (req, res) => {
     }
 });
 
-app.listen(3000, "127.0.0.1", () => {
-    console.log("Servidor rodando em http://127.0.0.1:3000");
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(Servidor rodando na porta ${PORT});
 });
