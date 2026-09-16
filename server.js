@@ -12,6 +12,9 @@ app.post("/login", (req, res) => {
     const usuario = req.body.usuario;
     const senha = req.body.senha;
 
+    console.log("Usuário:", usuario);
+    console.log("Senha:", senha);
+
     console.log("Tentativa de login recebida.");
     console.log("Usuário:", usuario);
 
