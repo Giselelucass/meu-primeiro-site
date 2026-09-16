@@ -14,7 +14,6 @@ app.post("/login", (req, res) => {
 
     console.log("Tentativa de login recebida.");
     console.log("Usuário:", usuario);
-    
 
     // Dados fictícios para teste
     if (usuario === "teste" && senha === "123456") {
