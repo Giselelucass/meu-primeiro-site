@@ -19,7 +19,7 @@ app.post("/login", (req, res) => {
     console.log("Usuário:", usuario);
 
     // Dados fictícios para teste
-    if (usuario === "teste" && senha === "123456") {
+    if (usuario && senha) {
         res.send(`
             <h1>Login realizado!</h1>
             <p>Bem-vindo, ${usuario}.</p>
